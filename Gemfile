@@ -229,6 +229,9 @@ gem 'nokogiri', '>= 1.8.1'
 # memcached binary connector
 gem 'dalli'
 
+# for cleaning the database
+gem 'database_cleaner'
+
 # Use guard and spring for testing in development
 group :development do
   # to launch specs when files are modified
@@ -253,7 +256,6 @@ end
 group :test do
   # as test framework
   gem 'capybara'
-  gem 'database_cleaner'
   gem 'phantomjs', :require => 'phantomjs/poltergeist'
   gem 'poltergeist'
   gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
